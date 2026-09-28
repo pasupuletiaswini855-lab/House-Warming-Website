@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>House Warming | Ramesh & Family</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f3e9;
+    color: #3e3024;
+    overflow-x: hidden;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background:
+        linear-gradient(rgba(255,250,240,.82), rgba(255,250,240,.92)),
+        url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80')
+        center/cover;
+}
+
+.card {
+    max-width: 800px;
+    padding: 55px 35px;
+    background: rgba(255,255,255,.88);
+    border: 1px solid rgba(165,130,70,.35);
+    box-shadow: 0 20px 60px rgba(80,55,30,.15);
+    border-radius: 24px;
+    backdrop-filter: blur(8px);
+}
+
+.symbol {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.small-title {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #9a7741;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 8vw, 76px);
+    line-height: 1.05;
+    margin: 18px 0;
+    color: #674b29;
+}
+
+.subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #806544;
+}
+
+.divider {
+    width: 90px;
+    height: 2px;
+    background: #b3945c;
+    margin: 25px auto;
+}
+
+.names {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #604523;
+    margin: 15px 0;
+}
+
+.message {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 15px;
+    color: #65584c;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 35px 0;
+}
+
+.detail {
+    padding: 22px 12px;
+    background: #faf6ed;
+    border-radius: 16px;
+    border: 1px solid #eadfc9;
+}
+
+.detail-icon {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.detail strong {
+    display: block;
+    color: #6c512e;
+    margin-bottom: 5px;
+}
+
+.detail span {
+    font-size: 13px;
+    color: #766b60;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #80643b;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 14px;
+    transition: .3s;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #5e4528;
+    transform: translateY(-2px);
+}
+
+.countdown {
+    margin: 30px auto 10px;
+}
+
+.count-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #987a4d;
+    margin-bottom: 15px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.time-box {
+    min-width: 65px;
+}
+
+.time-box b {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #604523;
+}
+
+.time-box small {
+    font-size: 10px;
+    color: #8a7a68;
+    text-transform: uppercase;
+}
+
+.footer {
+    margin-top: 30px;
+    font-family: 'Playfair Display', serif;
+    color: #806544;
+    font-size: 18px;
+}
+
+@media(max-width:650px) {
+    .card {
+        padding: 40px 20px;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+    }
+
+    .timer {
+        gap: 5px;
+    }
+
+    .time-box {
+        min-width: 55px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="card">
+
+<div class="symbol">🏡✨</div>
+
+<div class="small-title">
+A New Beginning • A New Home
+</div>
+
+<h1>House Warming</h1>
+
+<div class="subtitle">
+Grand House Warming Ceremony
+</div>
+
+<div class="divider"></div>
+
+<p class="message">
+With the blessings of the Almighty and our beloved family members,
+we are delighted to invite you and your family to celebrate
+the auspicious beginning of our new home.
+</p>
+
+<div class="names">
+Mr. & Mrs. Ramesh
+</div>
+
+<p class="message">
+warmly welcome you to share this beautiful and memorable occasion with us.
+</p>
+
+<div class="details">
+
+<div class="detail">
+<div class="detail-icon">📅</div>
+<strong>Date</strong>
+<span>15 October 2026</span>
+</div>
+
+<div class="detail">
+<div class="detail-icon">⏰</div>
+<strong>Time</strong>
+<span>10:00 AM onwards</span>
+</div>
+
+<div class="detail">
+<div class="detail-icon">📍</div>
+<strong>Venue</strong>
+<span>Sri Sai Residency<br>Tirupati</span>
+</div>
+
+</div>
+
+<a class="btn"
+href="https://www.google.com/maps/search/?api=1&query=Sri+Sai+Residency+Tirupati"
+target="_blank">
+📍 View Location
+</a>
+
+<a class="btn"
+href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Grand+House+Warming+Ceremony+-+Ramesh+Family&dates=20261015T043000Z/20261015T063000Z&location=Sri+Sai+Residency,+Tirupati"
+target="_blank">
+📅 Add to Calendar
+</a>
+
+<div class="countdown">
+
+<div class="count-title">
+Counting Down to Our Special Day
+</div>
+
+<div class="timer">
+
+<div class="time-box">
+<b id="days">00</b>
+<small>Days</small>
+</div>
+
+<div class="time-box">
+<b id="hours">00</b>
+<small>Hours</small>
+</div>
+
+<div class="time-box">
+<b id="minutes">00</b>
+<small>Minutes</small>
+</div>
+
+<div class="time-box">
+<b id="seconds">00</b>
+<small>Seconds</small>
+</div>
+
+</div>
+</div>
+
+<div class="footer">
+💐 Your presence and blessings will make our new beginning even more memorable. 💐
+<br><br>
+With Love,<br>
+<strong>Ramesh & Family</strong>
+</div>
+
+</div>
+</section>
+
+<script>
+
+const eventDate = new Date("October 15, 2026 10:00:00").getTime();
+
+function updateCountdown() {
+
+    const now = new Date().getTime();
+    const distance = eventDate - now;
+
+    if (distance <= 0) {
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) /
+        (1000 * 60 * 60)
+    );
+
+    const minutes = Math.floor(
+        (distance % (1000 * 60 * 60)) /
+        (1000 * 60)
+    );
+
+    const seconds = Math.floor(
+        (distance % (1000 * 60)) /
+        1000
+    );
+
+    document.getElementById("days").innerHTML =
+        String(days).padStart(2, "0");
+
+    document.getElementById("hours").innerHTML =
+        String(hours).padStart(2, "0");
+
+    document.getElementById("minutes").innerHTML =
+        String(minutes).padStart(2, "0");
+
+    document.getElementById("seconds").innerHTML =
+        String(seconds).padStart(2, "0");
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+</script>
+
+</body>
+</html>
